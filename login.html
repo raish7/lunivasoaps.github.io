@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Customer Login</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel = "icon" href =  "logo1.png" type = "image/x-icon"> 
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  <style>
+  .checked
+  {
+    color:orange;
+  }
+
+
+
+input[type=email], input[type=password] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+button:hover {
+  opacity: 0.8;
+}
+
+.create {
+  width: 20%;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .create {
+     width: 20%;
+  }
+}
+  </style>
+
+</head>
+
+<body>
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #dce0e6">
+  <a class="navbar-brand" href="index.html"><img src="https://previews.123rf.com/images/nereia/nereia1805/nereia180500292/101737113-floral-watercolor-alphabet-monogram-initial-letter-l-design-with-hand-drawn-peony-and-anemone-flower.jpg" height="40px" width="40px"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html" style="color:#18d6c3;">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color:#18d6c3;">About us</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" style="color:#18d6c3;" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Shop
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Natural Handmade soap</a>
+          <a class="dropdown-item" href="#">Body & Face</a>
+          <a class="dropdown-item" href="#">Shampoo</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Gifts</a>
+
+        </div>
+      </li>
+          </ul><br>
+  <button type="button" class="btn btn-primary" onclick="window.location.href='login.html';">Log in</button>&nbsp;&nbsp;
+  <a href="#" style="color:black;"><i class="fa fa-shopping-cart" style="font-size:24px"></i></a>
+  </div>
+</nav><br><br><br>
+
+
+<div class="container">
+<center><p style="font-family: Poppins;font-size: 40px;">Log In</p><hr color="grey" width="30%"><br>
+
+<form action="/action_page.php" method="post">
+  <!--<div class="imgcontainer">
+    <img src="avt3.png" alt="Avatar" class="avatar" >
+  </div>-->
+  <img src="avt3.png"><br><br>
+
+    <label for="uname"><b style="font-family: Varela round;">Email</b></label><br>
+    <input type="email" placeholder="Enter email" name="uname" required>
+
+    <br><br><label for="psw"><b style="font-family: Varela round;">Password</b></label><br>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <br><button type="submit" style="background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;">Login</button><br>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label></center>
+  </div>
+
+  <div class="container">
+    <center>
+    <button type="button" style="background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;font-family: Varela round;" class="create">Create an account</button></center>
+  </div>
+</form><br><br>
+
+<div class="jumbotron" style="margin-bottom: 0px;">
+      <div class="row">
+    <div class="col-3">
+      <p style="text-decoration: underline;">Useful Info</p>
+      <a href="#">My Account</a><br>
+      <a href="#">Delivery & return</a><br>
+      <a href="#">Privacy Policy</a><br>
+      <a href="#">Terms and conditions</a>
+    </div>
+    <div class="col-3">
+      <p style="text-decoration: underline;">Who we are</p>
+      <a href="#" style="text-decoration: black;">About us</a><br>
+      <a href="#">FAQs</a><br>
+      <a href="#">Product reviews</a><br>
+      <a href="#">Contact us</a>
+    </div>
+    <div class="col-6">
+      <p style="text-decoration: underline;">Newsletter</p>
+      <p>Join Luniva Soaps Newsletter - a different kind of newsletter. Updates on what we're <br>reading, doing and listening to. It might make you smile.</p>
+        <br>
+
+        <form>
+        <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required/>
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div></div>
+<br><br>
+    <div class="copyright">
+      <center>&copy Luniva Soap 2020 <br>
+      <a href="https://www.facebook.com/lunivasoap/" target="_blank" class="fa fa-facebook"></a>&nbsp;
+      <a href="https://www.instagram.com/lunivasoap/" target="_blank" class="fa fa-instagram"></a>&nbsp;
+      <a href="https://www.youtube.com" target="_blank" class="fa fa-youtube"></a></center>
+    </div>
+  </div>
+</body>
+</html>
