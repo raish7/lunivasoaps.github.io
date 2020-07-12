@@ -17,6 +17,33 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
+	<script>
+		function myfunc()
+		{
+			document.getElementById("demo").style.backgroundColor="#ed9f0e";
+		}
+		function myfunc1()
+		{
+			document.getElementById("demo1").style.backgroundColor="#ed9f0e";
+		}
+		function myfunc2()
+		{
+			document.getElementById("demo2").style.backgroundColor="#ed9f0e";
+		}
+		function myfunc3()
+		{
+			document.getElementById("demo3").style.backgroundColor="#ed9f0e";
+		}
+		function myfunc4()
+		{
+			document.getElementById("demo4").style.backgroundColor="#ed9f0e";
+		}
+		function myfunc5()
+		{
+			document.getElementById("demo5").style.backgroundColor="#ed9f0e";
+		}
+	</script>
+
 	<style>
 	.container1 {
 		  position: relative;
@@ -119,7 +146,7 @@
 							<span class="fa fa-star checked"></span>
 							<span class="fa fa-star checked"></span></figcaption>-->
 							<p>Rs.130</p>
-							<button type="button" class="btn btn-primary btn-lg">Add to cart</button><br><br>
+							<button type="button" id="demo" class="btn btn-primary btn-lg" onclick="myfunc()">Add to cart</button><br><br>
 					</div>
 			
 			
@@ -132,7 +159,7 @@
 							<span class="fa fa-star checked"></span>
 							<span class="fa fa-star checked"></span>-->
 							<p>Rs.170</p>
-							<button type="button" class="btn btn-primary btn-lg">Add to cart</button><br><br>
+							<button type="button" id="demo1" class="btn btn-primary btn-lg" onclick="myfunc1()">Add to cart</button><br><br>
 						</div>
 			
 					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -144,7 +171,7 @@
 							<span class="fa fa-star checked"></span>
 							<span class="fa fa-star checked"></span>-->
 							<p>Rs.190</p>
-							<button type="button" class="btn btn-primary btn-lg">Add to cart</button><br>
+							<button type="button" id="demo2" class="btn btn-primary btn-lg"  onclick="myfunc2()">Add to cart</button><br>
 						
 					</div>
 				</div>
@@ -153,7 +180,7 @@
 						<br><a href="neem.html"><img src="l4_new.jpg" height="auto" width="100%"></a>
 						<br><br><a href="neem.html"><figcaption style="font-family: Roboto;"><b>Luniva Pure Neem</b></figcaption></a><br>
 						<p>Rs.190</p>
-						<button type="button" class="btn btn-primary btn-lg">Add to cart</button><br>
+						<button type="button" id="demo3" class="btn btn-primary btn-lg" onclick="myfunc3()">Add to cart</button><br>
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 						<br><a href="wildrose.html"><img src="l2.jpg" height="auto" width="100%"></a>
@@ -164,7 +191,7 @@
 							<span class="fa fa-star checked"></span>
 							<span class="fa fa-star checked"></span></figcaption>-->
 							<p>Rs.130</p>
-							<button type="button" class="btn btn-primary btn-lg">Add to cart</button><br><br>
+							<button type="button" id="demo4" class="btn btn-primary btn-lg"  onclick="myfunc4()">Add to cart</button><br><br>
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 					<br><a href="orangebloss.html"><img src="l3_new.jpg" height="auto" width="100%" /></a>
@@ -175,7 +202,7 @@
 							<span class="fa fa-star checked"></span>
 							<span class="fa fa-star checked"></span>-->
 							<p>Rs.170</p>
-							<button type="button" class="btn btn-primary btn-lg">Add to cart</button><br><br>
+							<button type="button" id="demo5" class="btn btn-primary btn-lg"  onclick="myfunc5()">Add to cart</button><br><br>
 						</div>
 
 
@@ -246,7 +273,7 @@
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required/>
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary"  onclick="window.alert('Thanks for subscribing! :)');">Submit</button>
 </form>
 </div></div>
 <br><br>
